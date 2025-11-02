@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Errors</title>
+
+  <style>
+    /* ==============================
+       Basic Page Styling
+       ============================== */
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      color: #004d99;
+    }
+
+    hr {
+      margin: 25px 0;
+      border: 0;
+      border-top: 2px solid #0077cc;
+    }
+
+    /* ==============================
+       Example Box Styles
+       ============================== */
+    .example-box {
+      background-color: #fff;
+      border-left: 5px solid #007acc;
+      padding: 15px;
+      margin: 20px 0;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    pre {
+      background-color: #272822;
+      color: #f8f8f2;
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+
+    .demo {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 6px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>CSS Errors</h1>
+
+  <p>Errors in CSS can cause styles to behave unpredictably or not apply at all.  
+  While most browsers ignore invalid rules, missing punctuation or braces can break large parts of your stylesheet.</p>
+
+  <hr>
+
+  <h2>1. Missing Semicolons</h2>
+  <p>Each property must end with a semicolon (<code>;</code>).  
+  Missing one can stop the next property from being read correctly.</p>
+
+  <div class="example-box">
+    <pre>
+<!-- /* ❌ Incorrect */ -->
+.bad {
+  color: red
+  background-color: yellow;
+}
+
+<!-- /* ✅ Correct */ -->
+.good {
+  color: red;
+  background-color: yellow;
+}
+    </pre>
+  </div>
+
+  <hr>
+
+  <h2>2. Invalid Property Names</h2>
+  <p>Misspelled or non-existent properties are ignored by browsers.</p>
+
+  <div class="example-box">
+    <pre>
+<!-- /* ❌ Incorrect */ -->
+.bad {
+  colr: blue;        /* Invalid property name */
+  font-size: 16px;
+}
+
+<!-- /* ✅ Correct */ -->
+.good {
+  color: blue;
+  font-size: 16px;
+}
+    </pre>
+  </div>
+
+  <hr>
+
+  <h2>3. Invalid Values</h2>
+  <p>If you use a valid property but an invalid value, that rule won’t apply.</p>
+
+  <div class="example-box">
+    <pre>
+<!-- /* ❌ Incorrect */ -->
+.bad {
+  width: -100px;   /* Negative width is invalid */
+  color: green;
+}
+
+<!-- /* ✅ Correct */ -->
+.good {
+  width: 100px;
+  color: green;
+}
+    </pre>
+  </div>
+
+  <hr>
+
+  <h2>4. Unclosed Braces</h2>
+  <p>Forgetting to close a curly brace (<code>}</code>) can invalidate all following CSS rules.</p>
+
+  <div class="example-box">
+    <pre>
+<!-- /* ❌ Incorrect */ -->
+.bad {
+  padding: 20px;
+  margin: 10px;
+
+<!-- /* ✅ Correct */ -->
+.good {
+  padding: 20px;
+  margin: 10px;
+}
+    </pre>
+  </div>
+
+  <hr>
+
+  <h2>5. Extra Colons or Braces</h2>
+  <p>Accidentally typing extra colons or braces can break the syntax.</p>
+
+  <div class="example-box">
+    <pre>
+<!-- /* ❌ Incorrect */ -->
+.bad {
+  color:: blue;
+}
+
+<!-- /* ✅ Correct */ -->
+.good {
+  color: blue;
+}
+    </pre>
+  </div>
+
+  <hr>
+
+  <h2>Tips to Avoid CSS Errors</h2>
+  <ul>
+    <li>Use a <b>code editor</b> with syntax highlighting (e.g., VS Code).</li>
+    <li>Validate CSS using an online <b>CSS validator</b> or linter.</li>
+    <li>Write CSS in <b>small sections</b> and test frequently in a browser.</li>
+    <li>Use proper indentation and comments for clarity.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Live Example Demo</h2>
+
+  <div class="demo">
+    <h3>Incorrect Style:</h3>
+    <p style="color: red; background-color: yellow;">This line has a missing semicolon → only text color works.</p>
+
+    <h3>Correct Style:</h3>
+    <p style="color: red; background-color: yellow;">This line renders correctly with both color and background.</p>
+  </div>
+
+  <hr>
+
+  <h2>Summary</h2>
+  <ul>
+    <li>CSS errors can cause inconsistent or missing styles.</li>
+    <li>Browsers skip invalid rules but stop parsing unclosed braces.</li>
+    <li>Always validate and test your CSS frequently.</li>
+  </ul>
+
+</body>
+</html>

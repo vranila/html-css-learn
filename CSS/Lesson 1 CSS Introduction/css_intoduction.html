@@ -3,10 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Introduction</title>
-
-  <!-- External CSS link (example only, this file can be created separately) -->
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <title>CSS Introduction, Syntax & Comments</title>
 
   <style>
     /* ------------------------------
@@ -15,8 +12,9 @@
 
     /* The body selector applies background and font style to the entire page */
     body {
-      background-color: lightblue; /* Sets background color */
+      background-color: #f4f7fa; /* Sets background color */
       font-family: Verdana, sans-serif; /* Sets the font for the page */
+      padding: 20px;
     }
 
     /* h1 tag styling */
@@ -26,6 +24,11 @@
       background-color: #0066cc; /* Adds contrast background */
       padding: 10px;
       border-radius: 8px;
+    }
+
+    /* h2 subheading styling */
+    h2 {
+      color: #004d99;
     }
 
     /* Paragraph styling */
@@ -41,46 +44,6 @@
       padding: 15px;
       border-left: 5px solid #0077cc;
       margin: 20px 0;
-    }
-
-    /* Links to simulate multiple stylesheets */
-    .stylesheet-links a {
-      margin-right: 10px;
-      text-decoration: none;
-      background: #0077cc;
-      color: white;
-      padding: 5px 10px;
-      border-radius: 5px;
-    }
-
-    .stylesheet-links a:hover {
-      background: #005fa3;
-    }
- 
-    /* ---------------------------------
-       CSS Syntax Demonstration
-       ---------------------------------
-       Format:
-       selector {
-         property: value;
-       }
-    */
-
-    /* Example rule: all <p> elements will have red text and center alignment */
-    p {
-      color: red;             /* property: sets text color */
-      text-align: center;     /* property: aligns text horizontally */
-    }
-
-    /* Basic formatting for the learning layout */
-    body {
-      font-family: Verdana, sans-serif;
-      background-color: #f4f7fa;
-      padding: 20px;
-    }
-
-    h1, h2 {
-      color: #004d99;
     }
 
     .example-box {
@@ -102,6 +65,27 @@
     .highlight {
       color: #c7254e;
       font-weight: bold;
+    }
+
+    .demo {
+      padding: 15px;
+      background-color: lightyellow;
+      border: 1px dashed #aaa;
+      margin-top: 10px;
+    }
+
+    /* Links for stylesheets */
+    .stylesheet-links a {
+      margin-right: 10px;
+      text-decoration: none;
+      background: #0077cc;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .stylesheet-links a:hover {
+      background: #005fa3;
     }
   </style>
 </head>
@@ -149,19 +133,19 @@
 
   <div class="example">
     <pre>
-    body {
-    background-color: lightblue;
-    }
+body {
+  background-color: lightblue;
+}
 
-    h1 {
-    color: white;
-    text-align: center;
-    }
+h1 {
+  color: white;
+  text-align: center;
+}
 
-    p {
-    font-family: verdana;
-    font-size: 20px;
-    }
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
     </pre>
   </div>
 
@@ -202,8 +186,6 @@ h1 {
 
   <hr>
 
-
-
   <h3>Summary</h3>
   <ul>
     <li>CSS defines style, color, and layout of web pages.</li>
@@ -211,15 +193,17 @@ h1 {
     <li>External CSS enables easy global updates.</li>
   </ul>
 
+  <hr>
+
+  <!-- =============================== -->
+  <!-- CSS SYNTAX SECTION -->
+  <!-- =============================== -->
 
   <h1>CSS Syntax</h1>
 
   <p><b>CSS (Cascading Style Sheets)</b> is written using a simple syntax that defines how HTML elements should appear on a webpage.</p>
 
-  <hr>
-
   <h2>Structure of a CSS Rule</h2>
-
   <p>A CSS rule consists of two main parts:</p>
   <ul>
     <li><b>Selector</b> - targets the HTML element(s) you want to style.</li>
@@ -228,19 +212,16 @@ h1 {
 
   <div class="example-box">
     <pre>
-    selector {
-    property: value;
-    property: value;
-    }
+selector {
+  property: value;
+  property: value;
+}
     </pre>
   </div>
 
   <p>Each declaration includes a <span class="highlight">CSS property</span> name and a <span class="highlight">value</span>, separated by a colon (<code>:</code>), and declarations are separated by semicolons (<code>;</code>).</p>
 
-  <hr>
-
   <h2>Example</h2>
-
   <p>The following rule styles all <code>&lt;p&gt;</code> elements with red color and centered text:</p>
 
   <div class="example-box">
@@ -252,24 +233,81 @@ p {
     </pre>
   </div>
 
-  <h3>Example Explained</h3>
   <ul>
-    <li><code>p</code> - is the <b>selector</b> that points to all paragraph elements.</li>
-    <li><code>color</code> - is a <b>property</b> that changes text color.</li>
-    <li><code>red</code> - is the <b>value</b> assigned to the <code>color</code> property.</li>
-    <li><code>text-align</code> - aligns text horizontally within its element.</li>
-    <li><code>center</code> - is the value making the text centered.</li>
+    <li><code>p</code> - is the selector that points to paragraph elements.</li>
+    <li><code>color</code> - is the property that changes text color.</li>
+    <li><code>text-align</code> - aligns text horizontally.</li>
   </ul>
 
   <hr>
 
+  <!-- =============================== -->
+  <!-- CSS COMMENTS SECTION -->
+  <!-- =============================== -->
 
-  <h2>Summary</h2>
+  <h1>CSS Comments</h1>
+
+  <p>Comments in CSS are used to explain code, make it easier to understand, or disable parts of it temporarily.  
+  The browser ignores all comments.</p>
+
+  <h2>Syntax of Comments</h2>
+
+  <div class="example-box">
+    <pre>
+/* This is a single-line comment */
+
+/*
+  This is a multi-line comment
+  You can describe multiple rules here
+*/
+    </pre>
+  </div>
+
+  <p>Comments start with <code>/*</code> and end with <code>*/</code>. They can be added anywhere in your CSS file.</p>
+
+  <h2>Example: Comments in a CSS Block</h2>
+
+  <div class="example-box">
+    <pre>
+/* Set background color for the entire page */
+body {
+  background-color: lightblue;
+}
+
+/* Style the heading */
+h1 {
+  color: navy;
+  text-align: center;
+}
+
+/* Paragraph styles are temporarily disabled */
+/*
+p {
+  color: red;
+}
+*/
+    </pre>
+  </div>
+
   <ul>
-    <li>A CSS rule = Selector + Declaration Block</li>
-    <li>Declaration Block = Property + Value pairs</li>
-    <li>Use <code>;</code> to separate multiple declarations</li>
-    <li>Wrap declarations in <code>{ }</code></li>
+    <li><code>/* ... */</code> — explains or hides code sections.</li>
+    <li>Useful for documenting or debugging your stylesheet.</li>
+  </ul>
+
+  <h2>Live Example</h2>
+  <div class="demo">
+    <h1>This heading is styled using CSS</h1>
+    <p>This paragraph is using default styling because its rule is commented out.</p>
+  </div>
+
+  <hr>
+
+  <h2>Key Takeaways</h2>
+  <ul>
+    <li>Comments improve readability and maintainability.</li>
+    <li>Browsers ignore comments completely.</li>
+    <li>Use them to disable or document parts of your code.</li>
+    <li>Always close comments properly with <code>*/</code>.</li>
   </ul>
 
 </body>
