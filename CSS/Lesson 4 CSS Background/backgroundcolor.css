@@ -1,0 +1,70 @@
+/* ============================ */
+/* style.css */
+:root {
+--primary-bg: #f4f7fa;
+--accent-bg: #0b84ff;
+--text-color: #111827;
+--btn-hover: #0066cc;
+}
+
+
+body {
+margin: 0;
+font-family: 'Segoe UI', Roboto, sans-serif;
+background-color: var(--primary-bg);
+color: var(--text-color);
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+
+header {
+background-color: var(--accent-bg);
+color: white;
+text-align: center;
+padding: 20px 0;
+}
+
+
+main {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.content {
+background: white;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+text-align: center;
+}
+
+
+.btn {
+background-color: var(--accent-bg);
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 6px;
+cursor: pointer;
+font-size: 15px;
+transition: background-color 0.3s ease;
+}
+
+
+.btn:hover {
+background-color: var(--btn-hover);
+}
+
+
+footer {
+text-align: center;
+padding: 15px 0;
+background-color: #e5e7eb;
+color: #4b5563;
+font-size: 14px;
+}

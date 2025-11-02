@@ -1,0 +1,63 @@
+/* ======================= */
+/* styles.css (save as styles.css next to index.html) */
+:root{
+--color-primary: #0b84ff;
+--color-accent: #ff6b6b;
+--color-neutral: #111827;
+--color-soft: #f3f4f6;
+--radius: 12px;
+--gap: 16px;
+}
+
+
+*{box-sizing:border-box}
+body{
+font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+margin:0;
+color:var(--color-neutral);
+background:linear-gradient(180deg,var(--color-soft),#ffffff 60%);
+-webkit-font-smoothing:antialiased;
+}
+.site-header{
+padding:32px 24px;
+background:var(--color-primary);
+color:white;
+border-bottom-left-radius:16px;
+border-bottom-right-radius:16px;
+}
+.site-header h1{margin:0 0 6px 0;font-size:22px}
+.site-header .tag{opacity:.95;margin:0;font-size:14px}
+
+
+.container{max-width:920px;margin:28px auto;padding:0 20px}
+.palette .swatches{display:flex;gap:var(--gap);flex-wrap:wrap}
+.swatch{flex:1 1 160px;min-height:110px;border-radius:10px;display:flex;align-items:flex-end;padding:12px;color:white;position:relative}
+.swatch .label{font-size:13px;line-height:1.1;background:rgba(0,0,0,0.18);padding:6px;border-radius:6px}
+.swatch.primary{background:var(--color-primary)}
+.swatch.accent{background:var(--color-accent)}
+.swatch.neutral{background:var(--color-neutral)}
+.swatch.soft{background:linear-gradient(135deg,var(--color-soft),#e9eef8);color:#111827}
+
+
+.usage{margin-top:20px}
+.card{background:white;border-radius:var(--radius);padding:18px;box-shadow:0 8px 20px rgba(2,6,23,0.08);margin-bottom:16px}
+.card h3{margin:0 0 8px 0}
+.card p{margin:0 0 12px 0}
+.actions{display:flex;gap:12px}
+.btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+.btn-primary{background:var(--color-primary);color:white}
+.btn-outline{background:transparent;border:2px solid rgba(17,24,39,0.08);color:var(--color-neutral)}
+
+
+.gradient-box{padding:18px;border-radius:12px;background:linear-gradient(90deg,var(--color-primary),var(--color-accent));color:white;transition:transform .28s ease}
+.gradient-box:hover{transform:translateY(-6px)}
+
+
+.accessibility{margin-top:18px;padding:12px;font-size:14px;background:#ffffff;border-radius:10px}
+.site-footer{text-align:center;padding:18px;color:#6b7280}
+
+
+@media (max-width:640px){
+.swatch{flex-basis:48%}
+.site-header{padding:22px}
+}

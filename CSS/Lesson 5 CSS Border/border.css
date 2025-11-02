@@ -1,0 +1,88 @@
+/* Global styles */
+:root {
+  --accent: #0b84ff;
+  --neutral: #111827;
+  --bg: #f9fafb;
+  --card-bg: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--neutral);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--accent);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Border examples */
+.box {
+  background-color: var(--card-bg);
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.all-border {
+  border: 2px solid #333;
+}
+
+.red-bottom {
+  border: none;
+  border-bottom: 3px solid red;
+}
+
+.rounded {
+  border: 2px solid #888;
+  border-radius: 12px;
+}
+
+.blue-left {
+  border-left: 5px solid #0b84ff;
+}
+
+/* Border style samples */
+.border-sample {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-width: 3px;
+  border-color: #555;
+  border-style: solid;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.border-sample.dotted { border-style: dotted; }
+.border-sample.dashed { border-style: dashed; }
+.border-sample.solid { border-style: solid; }
+.border-sample.double { border-style: double; }
+.border-sample.groove { border-style: groove; }
+.border-sample.ridge { border-style: ridge; }
+.border-sample.inset { border-style: inset; }
+.border-sample.outset { border-style: outset; }
+.border-sample.none { border-style: none; }
+.border-sample.hidden { border-style: hidden; }
+.border-sample.mix { border-style: dotted dashed solid double; }
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #e5e7eb;
+  color: #4b5563;
+  font-size: 14px;
+}
