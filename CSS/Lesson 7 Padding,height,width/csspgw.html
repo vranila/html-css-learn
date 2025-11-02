@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Padding, Height & Width</title>
+  <link rel="stylesheet" href="../Lesson 7 Padding,height,width/csspgw.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Padding, Height & Width</h1>
+    <p>Understand how padding and dimensions work in the CSS box model.</p>
+  </header>
+
+  <main>
+    <!-- Padding Section -->
+    <section class="section">
+      <h2>1️⃣ CSS Padding</h2>
+      <p>The <strong>padding</strong> property creates space <em>inside</em> an element, between its content and border.</p>
+
+      <div class="box-example padding-box">
+        This element has <strong>70px</strong> padding on all sides.
+      </div>
+
+      <div class="code-snippet">
+        <pre><code>div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}</code></pre>
+      </div>
+    </section>
+
+    <!-- Box-Sizing Section -->
+    <section class="section">
+      <h2>2️⃣ Box-Sizing: Border-Box</h2>
+      <p>
+        Normally, padding adds to an element’s total width.  
+        Using <code>box-sizing: border-box;</code> keeps the element size fixed while padding adjusts internally.
+      </p>
+
+      <div class="box-example border-box">
+        Fixed width of <strong>300px</strong> even with 25px padding.
+      </div>
+
+      <div class="code-snippet">
+        <pre><code>div {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+}</code></pre>
+      </div>
+    </section>
+
+    <!-- Height & Width Section -->
+    <section class="section">
+      <h2>3️⃣ CSS Height and Width</h2>
+      <p>
+        The <strong>height</strong> and <strong>width</strong> properties control an element’s content area.  
+        Padding, border, and margin expand the total space taken.
+      </p>
+
+      <div class="box-example dimension-box">
+        Height: 200px, Width: 50%
+      </div>
+
+      <div class="code-snippet">
+        <pre><code>div {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+}</code></pre>
+      </div>
+    </section>
+
+    <!-- Visual Box Model Demo -->
+    <section class="section">
+      <h2>4️⃣ Box Model Visualization</h2>
+      <p>Each layer—margin, border, padding, and content—adds to total element size.</p>
+
+      <div class="box-model">
+        <div class="margin-layer">
+          Margin
+          <div class="border-layer">
+            Border
+            <div class="padding-layer">
+              Padding
+              <div class="content-layer">Content</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 | CSS Fundamentals by MindCraft AI</p>
+  </footer>
+</body>
+</html>

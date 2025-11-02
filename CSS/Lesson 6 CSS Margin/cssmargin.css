@@ -1,0 +1,138 @@
+/* ======== Base Styling ======== */
+:root {
+  --accent: #0b84ff;
+  --text: #111827;
+  --bg: #f9fafb;
+  --card: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  background: var(--accent);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+section {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+h2 {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+}
+
+/* ======== 1. Basic Margin ======== */
+.box {
+  background: #e5f1ff;
+  border: 2px solid #0b84ff;
+  padding: 10px;
+}
+.margin-70 {
+  margin: 70px;
+}
+
+/* ======== 2. Individual Sides ======== */
+.individual-margins {
+  border: 2px dashed #4b5563;
+  margin-top: 100px;
+  margin-right: 150px;
+  margin-bottom: 100px;
+  margin-left: 80px;
+  background: #f3f4f6;
+  padding: 10px;
+}
+
+/* ======== 3. Margin Shorthand ======== */
+.margin-four {
+  margin: 25px 50px 75px 100px;
+  border: 2px solid #94a3b8;
+  padding: 8px;
+}
+
+.margin-three {
+  margin: 25px 50px 75px;
+  border: 2px solid #64748b;
+  padding: 8px;
+}
+
+.margin-two {
+  margin: 25px 50px;
+  border: 2px solid #475569;
+  padding: 8px;
+}
+
+.margin-one {
+  margin: 25px;
+  border: 2px solid #334155;
+  padding: 8px;
+}
+
+/* ======== 4. Auto Margin ======== */
+.center-box {
+  width: 300px;
+  margin: auto;
+  border: 2px solid red;
+  text-align: center;
+  padding: 10px;
+  background: #fee2e2;
+}
+
+/* ======== 5. Inherited Margin ======== */
+.parent {
+  border: 2px solid red;
+  margin-left: 100px;
+  padding: 10px;
+}
+
+.child {
+  margin-left: inherit;
+  border: 2px dashed blue;
+  padding: 5px;
+}
+
+/* ======== 6. Margin Collapse ======== */
+h1 {
+  margin-bottom: 50px;
+  color: #1e293b;
+}
+h2 {
+  margin-top: 20px;
+}
+
+.collapse-demo p {
+  border: 2px solid #9ca3af;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+
+/* ======== Footer ======== */
+footer {
+  background-color: #e5e7eb;
+  text-align: center;
+  padding: 15px 0;
+  color: #4b5563;
+  font-size: 14px;
+}

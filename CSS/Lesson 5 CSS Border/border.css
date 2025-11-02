@@ -1,17 +1,17 @@
-/* Global styles */
+/* ======== Base Styles ======== */
 :root {
-  --accent: #0b84ff;
-  --neutral: #111827;
+  --text: #111827;
   --bg: #f9fafb;
-  --card-bg: #ffffff;
+  --card: #ffffff;
+  --accent: #0b84ff;
+  --shadow: rgba(0, 0, 0, 0.08);
 }
 
 body {
   margin: 0;
   font-family: 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
   background-color: var(--bg);
-  color: var(--neutral);
-  line-height: 1.6;
 }
 
 header {
@@ -19,69 +19,120 @@ header {
   color: white;
   text-align: center;
   padding: 20px 0;
+  margin-bottom: 20px;
 }
 
 main {
   max-width: 900px;
-  margin: 30px auto;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
 }
 
-/* Border examples */
-.box {
-  background-color: var(--card-bg);
-  margin-bottom: 20px;
-  padding: 15px;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+section {
+  background: var(--card);
+  padding: 20px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--shadow);
 }
 
-.all-border {
+h2 {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+}
+
+p {
+  padding: 10px;
+  margin: 8px 0;
+  background: #f3f4f6;
+}
+
+/* ======== 1. Basic Borders ======== */
+.border-all {
   border: 2px solid #333;
 }
 
-.red-bottom {
-  border: none;
+.border-bottom {
   border-bottom: 3px solid red;
 }
 
 .rounded {
-  border: 2px solid #888;
-  border-radius: 12px;
+  border: 2px solid #777;
+  border-radius: 10px;
 }
 
-.blue-left {
-  border-left: 5px solid #0b84ff;
+.border-left {
+  border-left: 5px solid blue;
 }
 
-/* Border style samples */
-.border-sample {
-  background-color: white;
-  padding: 10px;
-  margin-bottom: 12px;
-  border-width: 3px;
-  border-color: #555;
-  border-style: solid;
-  border-radius: 6px;
-  text-align: center;
+/* ======== 2. Border Styles ======== */
+.dotted { border-style: dotted; border-width: 3px; }
+.dashed { border-style: dashed; border-width: 3px; }
+.solid { border-style: solid; border-width: 3px; }
+.double { border-style: double; border-width: 5px; }
+.groove { border-style: groove; border-width: 5px; border-color: gray; }
+.ridge { border-style: ridge; border-width: 5px; border-color: gray; }
+.inset { border-style: inset; border-width: 4px; }
+.outset { border-style: outset; border-width: 4px; }
+.mix { border-style: dotted dashed solid double; border-width: 3px; }
+
+/* ======== 3. Border Width ======== */
+.one { border-style: solid; border-width: 5px; }
+.two { border-style: solid; border-width: medium; }
+.three { border-style: dotted; border-width: 2px; }
+.four { border-style: dotted; border-width: thick; }
+
+/* ======== 4. Border Sides ======== */
+.different-sides {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: double;
+  border-left-style: dashed;
+  border-width: 4px;
 }
 
-.border-sample.dotted { border-style: dotted; }
-.border-sample.dashed { border-style: dashed; }
-.border-sample.solid { border-style: solid; }
-.border-sample.double { border-style: double; }
-.border-sample.groove { border-style: groove; }
-.border-sample.ridge { border-style: ridge; }
-.border-sample.inset { border-style: inset; }
-.border-sample.outset { border-style: outset; }
-.border-sample.none { border-style: none; }
-.border-sample.hidden { border-style: hidden; }
-.border-sample.mix { border-style: dotted dashed solid double; }
+.two-values {
+  border-style: dotted solid;
+  border-width: 4px;
+}
 
+.three-values {
+  border-style: dotted solid double;
+  border-width: 4px;
+}
+
+.four-values {
+  border-style: dotted solid double dashed;
+  border-width: 4px;
+}
+
+/* ======== 5. Rounded Borders ======== */
+.round-1 {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.round-2 {
+  border: 2px solid blue;
+  border-radius: 15px;
+}
+
+.round-3 {
+  border: 2px solid green;
+  border-radius: 25px;
+}
+
+.round-4 {
+  border: 2px solid purple;
+  border-radius: 50px;
+}
+
+/* ======== Footer ======== */
 footer {
   text-align: center;
-  padding: 20px 0;
+  padding: 20px;
   background-color: #e5e7eb;
   color: #4b5563;
   font-size: 14px;
