@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Float Property Example</title>
+  <link rel="stylesheet" href="../Lesson 20 Float/float.css">
+</head>
+<body>
+
+  <header>
+    <h1>CSS <code>float</code> Property</h1>
+    <p>The <strong>float</strong> property determines how elements are positioned relative to their container — typically used to let text wrap around images or align blocks side-by-side.</p>
+  </header>
+
+  <section class="example">
+    <h2>Example 1: <code>float: right;</code></h2>
+    <p>
+      <img src="../assessts/image.jpg" alt="Pineapple" class="right-img">
+      The image on the right uses <code>float: right;</code>.  
+      The surrounding text wraps around the image dynamically.  
+      Resize the browser to see how the text adjusts to the image placement.
+      <br><br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus, libero sed sagittis sagittis, risus justo gravida orci, nec facilisis odio ante nec elit. Sed malesuada sapien sed turpis varius, ac suscipit massa dapibus.
+    </p>
+  </section>
+
+  <section class="example">
+    <h2>Example 2: <code>float: left;</code></h2>
+    <p>
+      <img src="../assessts/image.jpg" alt="Pineapple" class="left-img">
+      The image on the left uses <code>float: left;</code>.  
+      The text wraps nicely on the right-hand side.  
+      <br><br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget nisl nec velit varius condimentum. Integer sed tristique sem. Sed nec mattis libero. Aenean ullamcorper neque eget elit congue, ac facilisis velit feugiat.
+    </p>
+  </section>
+
+  <section class="example">
+    <h2>Example 3: <code>float: none;</code></h2>
+    <p>
+      <img src="../assessts/image.jpg" alt="Pineapple" class="no-float-img">
+      This image has <code>float: none;</code> — it appears exactly where it is in the HTML flow, not floated to any side.
+      <br><br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius euismod quam, eget fermentum ligula congue vitae.
+    </p>
+  </section>
+
+  <section class="example">
+    <h2>Example 4: Floating Boxes Next to Each Other</h2>
+    <p>By using <code>float: left;</code> on block-level elements, they can appear side by side instead of stacking vertically.</p>
+
+    <div class="container">
+      <div class="div1">Box 1</div>
+      <div class="div2">Box 2</div>
+      <div class="div3">Box 3</div>
+    </div>
+
+    <p class="clearfix-info">The boxes above use <code>float: left;</code> and equal width percentages to align horizontally.  
+    A clearfix is applied to prevent layout breaking below.</p>
+  </section>
+
+</body>
+</html>

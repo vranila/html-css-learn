@@ -1,0 +1,77 @@
+/* General page setup */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 30px;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: #0078d4;
+}
+
+.example {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Float examples */
+.right-img {
+  float: right;
+  width: 180px;
+  margin: 0 0 10px 20px;
+  border-radius: 8px;
+}
+
+.left-img {
+  float: left;
+  width: 180px;
+  margin: 0 20px 10px 0;
+  border-radius: 8px;
+}
+
+.no-float-img {
+  float: none;
+  display: block;
+  width: 180px;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+/* Floating boxes example */
+.container {
+  overflow: auto; /* clearfix */
+  margin-top: 15px;
+}
+
+.container div {
+  float: left;
+  width: 30%;
+  padding: 30px 0;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-right: 3.33%;
+}
+
+.div1 { background: #ff4c4c; }
+.div2 { background: #ffc107; color: #333; }
+.div3 { background: #28a745; margin-right: 0; }
+
+/* Paragraph below boxes */
+.clearfix-info {
+  margin-top: 20px;
+  font-style: italic;
+  color: #666;
+}

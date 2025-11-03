@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS clear Property & clearfix Hack</title>
+  <link rel="stylesheet" href="../Lesson 20 Float/clear.css">
+</head>
+<body>
+
+  <header>
+    <h1>CSS <code>clear</code> Property & <code>clearfix</code> Hack</h1>
+    <p>The <strong>clear</strong> property controls how elements behave next to floated content.  
+       The <strong>clearfix</strong> hack fixes layout issues when floated elements overflow their container.</p>
+  </header>
+
+  <!-- Section 1: clear property demonstration -->
+  <section class="example">
+    <h2>Example 1: Using the <code>clear</code> Property</h2>
+    <p><strong>Scenario:</strong> When one element floats, and another is forced below it using <code>clear</code>.</p>
+
+    <div class="float-box left-box">Float Left (div1)</div>
+    <div class="normal-box">This box is next to the floated element.</div>
+    <div class="clear-box">This box uses <code>clear: left;</code> — it’s pushed below the floated box.</div>
+  </section>
+
+  <!-- Section 2: clearfix hack -->
+  <section class="example">
+    <h2>Example 2: The <code>clearfix</code> Hack</h2>
+    <p>Without clearfix, parent containers with floated elements collapse.  
+       The clearfix forces the parent to wrap around its floated children.</p>
+
+    <h3>Without Clearfix</h3>
+    <div class="container no-clearfix">
+      <div class="float-child">Box 1</div>
+      <div class="float-child">Box 2</div>
+    </div>
+    <p class="note">⬆️ Notice how the gray border collapses — the container does not expand around the floats.</p>
+
+    <h3>With Clearfix</h3>
+    <div class="container clearfix">
+      <div class="float-child">Box 1</div>
+      <div class="float-child">Box 2</div>
+    </div>
+    <p class="note">✅ The clearfix makes the parent container expand correctly to wrap the floated children.</p>
+  </section>
+
+</body>
+</html>

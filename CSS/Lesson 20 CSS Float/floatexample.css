@@ -1,0 +1,104 @@
+/* Global styles */
+* {
+  box-sizing: border-box; /* Ensures padding and borders are part of total width */
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 30px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: #0078d4;
+  font-size: 1.8rem;
+}
+
+.example {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  color: #0078d4;
+  margin-bottom: 15px;
+}
+
+.note {
+  font-style: italic;
+  color: #555;
+  margin-top: 15px;
+}
+
+/* Equal width floating boxes */
+.container {
+  overflow: auto; /* Prevent float collapse */
+}
+
+.box {
+  float: left;
+  width: 33.33%; /* 3 boxes across */
+  padding: 50px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.box1 {
+  background: #e74c3c;
+}
+
+.box2 {
+  background: #3498db;
+}
+
+.box3 {
+  background: #2ecc71;
+}
+
+/* Floating image gallery */
+/* Clearfix to contain floated elements */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Gallery layout */
+.img-gallery {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.img-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+

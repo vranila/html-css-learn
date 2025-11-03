@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Overflow Property Example</title>
+  <link rel="stylesheet" href="../Lesson 19 Overflow/overflow.css">
+</head>
+<body>
+
+  <header>
+    <h1>CSS <code>overflow</code> Property</h1>
+    <p>The <strong>overflow</strong> property controls how content is handled when it exceeds the boundaries of its container.</p>
+  </header>
+
+  <section class="example">
+    <h2>Overview</h2>
+    <p>Values of the <code>overflow</code> property:</p>
+    <ul>
+      <li><strong>visible</strong> – Default. Content spills outside the box.</li>
+      <li><strong>hidden</strong> – Extra content is clipped (not visible).</li>
+      <li><strong>scroll</strong> – Always adds scrollbars (even if not needed).</li>
+      <li><strong>auto</strong> – Adds scrollbars only when necessary.</li>
+    </ul>
+  </section>
+
+  <section class="example">
+    <h2>Example 1: overflow: visible (default)</h2>
+    <div class="box visible">
+      This is a box with <code>overflow: visible</code>.  
+      The text is longer than the box, so it spills out.  
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+    </div>
+  </section>
+
+  <section class="example">
+    <h2>Example 2: overflow: hidden</h2>
+    <div class="box hidden">
+      This box uses <code>overflow: hidden</code>.  
+      Extra content is clipped and not visible.  
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+    </div>
+  </section>
+
+  <section class="example">
+    <h2>Example 3: overflow: scroll</h2>
+    <div class="box scroll">
+      This box uses <code>overflow: scroll</code>.  
+      Scrollbars always appear, even if not needed.  
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+    </div>
+  </section>
+
+  <section class="example">
+    <h2>Example 4: overflow: auto</h2>
+    <div class="box auto">
+      This box uses <code>overflow: auto</code>.  
+      Scrollbars appear only if content exceeds the box height.  
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem. 
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+    </div>
+  </section>
+
+  <section class="example">
+    <h2>Example 5: overflow-x and overflow-y</h2>
+    <p>You can control overflow separately for horizontal (<code>overflow-x</code>) and vertical (<code>overflow-y</code>) directions.</p>
+    <div class="box xy">
+      This box uses <code>overflow-x: scroll</code> and <code>overflow-y: hidden</code>.  
+      You can scroll horizontally but not vertically.<br><br>
+      <span class="wide-text">This_is_a_long_horizontal_text_without_breaks_to_demonstrate_horizontal_scrolling_in_action.</span>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Float Examples</title>
+  <link rel="stylesheet" href="../Lesson 20 Float/float.css">
+</head>
+<body>
+
+  <header>
+    <h1>CSS Float Examples</h1>
+    <p>The <code>float</code> property allows elements like boxes or images to sit side by side by floating them within a container.</p>
+  </header>
+
+  <!-- Equal Width Boxes -->
+  <section class="example">
+    <h2>Example 1: Equal Width Boxes</h2>
+    <p>Using <code>float: left</code> to create three equal-width boxes side by side.</p>
+
+    <div class="container">
+      <div class="box box1">Box 1</div>
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
+    </div>
+
+    <p class="note"> The <code>box-sizing: border-box;</code> ensures padding and border are included in the total width, preventing layout breakage.</p>
+  </section>
+
+  <!-- Images down by down -->
+ <section class="example">
+  <h2>Example 2: Images down by down</h2>
+  <p>Floating images side by side with equal width and padding.</p>
+
+  <div class="img-gallery clearfix">
+    <div class="img-container">
+      <img src="../assessts/image.jpg" alt="ocean" style="width:33.33%;height: 33.33%;">
+    </div>
+    <div class="img-container">
+      <img src="../assessts/image.jpg" alt="ocean" style="width:33.33%;height: 33.33%;">
+    </div>
+    <div class="img-container">
+      <img src="../assessts/image.jpg" alt="ocean"style="width:33.33%;height: 33.33%;">
+    </div>
+  </div>
+
+  <p class="note">
+    The grid-style float layout is flexible for both content boxes and image galleries.
+  </p>
+</section>
+
+
+</body>
+</html>

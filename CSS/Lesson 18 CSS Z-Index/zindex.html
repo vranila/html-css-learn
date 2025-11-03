@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS z-index Property Example</title>
+  <link rel="stylesheet" href="../Lesson 18 CSS Z-Index/zindex.css">
+</head>
+<body>
+
+  <header>
+    <h1>CSS <code>z-index</code> Property</h1>
+    <p>The <strong>z-index</strong> property controls which elements appear on top when elements overlap.</p>
+  </header>
+
+  <!-- Image behind heading -->
+  <section class="example">
+    <h2>Example 1: Image Behind Text</h2>
+    <div class="image-section">
+      <img src="../assessts/image.jpg" alt="Ocean background">
+      <h3>This is a heading</h3>
+      <p>Because the image has a z-index of -1, it appears behind the text.</p>
+    </div>
+  </section>
+
+  <!-- With z-index -->
+  <section class="example">
+    <h2>Example 2: With z-index</h2>
+    <p>A positioned element with a higher <code>z-index</code> always appears above one with a lower value.</p>
+    <div class="container with-zindex">
+      <div class="black-box">Black box (z-index: 1)</div>
+      <div class="gray-box">Gray box (z-index: 3)</div>
+      <div class="green-box">Green box (z-index: 2)</div>
+    </div>
+  </section>
+
+  <!-- Without z-index -->
+  <section class="example">
+    <h2>Example 3: Without z-index</h2>
+    <p>If no <code>z-index</code> is specified, the stacking order follows the HTML source order.</p>
+    <div class="container no-zindex">
+      <div class="black-box">Black box (no z-index)</div>
+      <div class="gray-box">Gray box (no z-index)</div>
+      <div class="green-box">Green box (no z-index)</div>
+    </div>
+  </section>
+
+</body>
+</html>

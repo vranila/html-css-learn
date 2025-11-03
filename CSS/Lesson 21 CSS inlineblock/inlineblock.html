@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS display: inline-block - Detailed Example</title>
+  <link rel="stylesheet" href="../Lesson 21 CSS inlineblock/inlineblock.css">
+</head>
+<body>
+
+  <header>
+    <h1>CSS <code>display: inline-block</code> - Detailed Example</h1>
+    <p>The <code>display: inline-block</code> property combines the behavior of inline and block-level elements.</p>
+  </header>
+
+  <!-- SECTION 1: Display Property Comparison -->
+  <section class="example">
+    <h2>Example 1: display: inline vs inline-block vs block</h2>
+    <p>
+      The example below shows how <code>display: inline</code>, 
+      <code>display: inline-block</code>, and <code>display: block</code> behave differently:
+    </p>
+
+    <div class="display-demo">
+      <span class="a">Inline</span>
+      <span class="b">Inline-Block</span>
+      <span class="c">Block</span>
+    </div>
+
+    <ul class="note">
+      <li><b>Inline:</b> Elements flow inline and ignore width/height properties.</li>
+      <li><b>Inline-block:</b> Elements flow inline but respect width/height and vertical spacing.</li>
+      <li><b>Block:</b> Elements start on a new line and take up the full width.</li>
+    </ul>
+  </section>
+
+  <!-- SECTION 2: Horizontal Navigation Menu -->
+  <section class="example">
+    <h2>Example 2: Horizontal Navigation Menu</h2>
+    <p>Using <code>display: inline-block</code> to align navigation menu items horizontally.</p>
+
+    <nav>
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <p class="note">
+      The <code>inline-block</code> display makes list items appear in a row 
+      while still supporting padding, margins, and width adjustments.
+    </p>
+  </section>
+
+</body>
+</html>
