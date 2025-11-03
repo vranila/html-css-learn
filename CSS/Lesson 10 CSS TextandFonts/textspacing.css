@@ -1,0 +1,104 @@
+/* --- GENERAL PAGE STYLES --- */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 40px auto;
+  max-width: 950px;
+  background-color: #f9fafb;
+  color: #1f2937;
+  line-height: 1.7;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #1e3a8a;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #555;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #1d4ed8;
+  border-left: 4px solid #1e3a8a;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.example-box {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-top: 15px;
+}
+
+/* --- TEXT SPACING PROPERTIES --- */
+
+/* Text Indentation */
+.indent {
+  text-indent: 50px;
+}
+
+/* Letter Spacing */
+.wide {
+  letter-spacing: 5px;
+  color: #065f46;
+}
+
+.tight {
+  letter-spacing: -2px;
+  color: #b91c1c;
+}
+
+/* Line Height */
+.small-line {
+  line-height: 0.8;
+}
+
+.large-line {
+  line-height: 1.8;
+}
+
+/* Word Spacing */
+.wide-words {
+  word-spacing: 10px;
+  color: #2563eb;
+}
+
+.tight-words {
+  word-spacing: -2px;
+  color: #b91c1c;
+}
+
+/* White Space */
+.nowrap {
+  white-space: nowrap;
+  background: #e0f2fe;
+  padding: 10px;
+}
+
+.pre {
+  white-space: pre;
+  background: #fef3c7;
+  padding: 10px;
+  font-family: monospace;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 40px;
+}

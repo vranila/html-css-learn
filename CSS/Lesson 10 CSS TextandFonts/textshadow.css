@@ -1,0 +1,110 @@
+/* --- BASE PAGE STYLE --- */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  margin: 40px auto;
+  max-width: 900px;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #1e3a8a;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #555;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #1d4ed8;
+  border-left: 4px solid #1e3a8a;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.example-box {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* --- TEXT SHADOW STYLES --- */
+
+/* 2. Basic Shadow */
+.basic {
+  text-shadow: 2px 2px;
+  font-size: 2em;
+  color: #0f172a;
+}
+
+/* 3. Red Shadow */
+.red-shadow {
+  text-shadow: 2px 2px red;
+  font-size: 2em;
+  color: #0f172a;
+}
+
+/* 4. Blurred Shadow */
+.blurred {
+  text-shadow: 2px 2px 5px red;
+  font-size: 2em;
+  color: #0f172a;
+}
+
+/* 5. White Text on Dark Background */
+.dark-bg {
+  background-color: #111827;
+  color: white;
+}
+
+.white-glow {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 2em;
+}
+
+/* 6. Neon Effects */
+.neon-red {
+  text-shadow: 0 0 3px #ff0000;
+  font-size: 2em;
+  color: #111;
+}
+
+.neon-dual {
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  font-size: 2em;
+  color: #111;
+}
+
+.neon-multi {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px red;
+  background: #111827;
+  padding: 20px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 40px;
+}

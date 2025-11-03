@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model - Full Explanation</title>
+  <link rel="stylesheet" href="../Lesson 8 CSS Box Model/cssbocmodel.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Box Model</h1>
+    <p>Understand how every HTML element is structured in layers — content, padding, border, and margin.</p>
+  </header>
+
+  <main>
+    <!-- Section 1: Concept -->
+    <section class="section">
+      <h2>1️ What is the CSS Box Model?</h2>
+      <p>
+        In web design, every HTML element is considered a rectangular box.  
+        The <strong>CSS Box Model</strong> defines how these boxes are structured and how they interact with each other.
+      </p>
+
+      <div class="concept">
+        <ul>
+          <li><strong>Content:</strong> The inner area where text, images, or other elements appear.</li>
+          <li><strong>Padding:</strong> Clears space around the content, inside the border. Transparent.</li>
+          <li><strong>Border:</strong> Wraps around the padding and content. Visible and stylized.</li>
+          <li><strong>Margin:</strong> Creates space outside the border, separating the element from others.</li>
+        </ul>
+      </div>
+
+      <div class="box-demo">
+        <p>This box has all four layers — content, padding, border, and margin.</p>
+      </div>
+
+      <div class="code-snippet">
+        <pre><code>div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}</code></pre>
+      </div>
+    </section>
+
+    <!-- Section 2: Calculation -->
+    <section class="section">
+      <h2>2️ Box Model Calculation</h2>
+      <p>
+        When you set <code>width</code> and <code>height</code> in CSS, it only affects the <strong>content box</strong>.  
+        To get the actual size of the element, include <strong>padding</strong> and <strong>border</strong>.
+      </p>
+
+      <div class="example-box">
+        <p>Box Model Example</p>
+      </div>
+
+      <div class="calculation">
+        <p><strong>Width calculation:</strong></p>
+        <ul>
+          <li>Content width = 320px</li>
+          <li>Left + right padding = 10px + 10px = 20px</li>
+          <li>Left + right border = 5px + 5px = 10px</li>
+          <li><strong>Total width = 320 + 20 + 10 = 350px</strong></li>
+        </ul>
+
+        <p><strong>Height calculation:</strong></p>
+        <ul>
+          <li>Content height = 50px</li>
+          <li>Top + bottom padding = 10px + 10px = 20px</li>
+          <li>Top + bottom border = 5px + 5px = 10px</li>
+          <li><strong>Total height = 50 + 20 + 10 = 80px</strong></li>
+        </ul>
+      </div>
+
+      <div class="code-snippet">
+        <pre><code>div {
+  width: 320px;
+  height: 50px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}</code></pre>
+      </div>
+
+      <p class="note">Note: Margin adds space around the element but is not included in the element’s total size.</p>
+    </section>
+
+    <!-- Section 3: Visual Breakdown -->
+    <section class="section">
+      <h2>3️ Visual Breakdown of the Box Model</h2>
+      <p>Each layer expands outward from the content box:</p>
+
+      <div class="layer-visual">
+        <div class="margin">
+          Margin
+          <div class="border">
+            Border
+            <div class="padding">
+              Padding
+              <div class="content">Content</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="note">Hover over each layer to highlight its role in the box model.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 | MindCraft AI — CSS Box Model Detailed Demo</p>
+  </footer>
+</body>
+</html>

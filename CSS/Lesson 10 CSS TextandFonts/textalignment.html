@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Text Alignment and Text Direction</title>
+  <link rel="stylesheet" href="../Lesson 10 CSS TextandFonts/textalignment.css  ">
+</head>
+<body>
+  <header>
+    <h1>CSS Text Alignment and Direction</h1>
+    <p class="subtitle">Mastering text alignment, direction, and vertical positioning in CSS</p>
+  </header>
+
+  <section>
+    <h2>Text Alignment</h2>
+    <p>The <strong>text-align</strong> property is used to control the horizontal alignment of text. It determines whether text aligns to the left, right, center, or stretches evenly across the container (justify).</p>
+
+    <div class="example-box">
+      <h3>Examples:</h3>
+      <h1 class="center">This is Center Aligned</h1>
+      <h2 class="left">This is Left Aligned (Default)</h2>
+      <h3 class="right">This is Right Aligned</h3>
+      <div class="justify">
+        <p>
+          This text demonstrates the <strong>justify</strong> alignment. Each line adjusts spacing so both the left and right edges align perfectly, similar to printed books or magazines.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Text Align Last</h2>
+    <p>The <strong>text-align-last</strong> property controls how the <em>last line</em> of a text block is aligned.</p>
+
+    <div class="example-box">
+      <p class="a">This paragraph has its last line aligned to the right. Text-align-last: right;</p>
+      <p class="b">This paragraph has its last line aligned to the center. Text-align-last: center;</p>
+      <p class="c">This paragraph has its last line justified, just like the rest. Text-align-last: justify;</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Vertical Alignment</h2>
+    <p>The <strong>vertical-align</strong> property is used to align inline or inline-block elements vertically with respect to their line or container.</p>
+
+    <div class="example-box vertical-demo">
+      <p>
+        Baseline <img src="https://via.placeholder.com/30" class="a" alt="baseline">
+        Text-top <img src="https://via.placeholder.com/30" class="b" alt="text-top">
+        Text-bottom <img src="https://via.placeholder.com/30" class="c" alt="text-bottom">
+        Sub <img src="https://via.placeholder.com/30" class="d" alt="sub">
+        Super <img src="https://via.placeholder.com/30" class="e" alt="super">
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Text Direction</h2>
+    <p>The <strong>direction</strong> property defines the writing direction of text — left-to-right (LTR) or right-to-left (RTL). The <strong>unicode-bidi</strong> property ensures the text direction is correctly applied, especially in multilingual layouts.</p>
+
+    <div class="example-box">
+      <p class="ltr">This paragraph uses left-to-right text direction (default).</p>
+      <p class="rtl">هذا النص يستخدم اتجاه الكتابة من اليمين إلى اليسار (Right-to-Left).</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 MindCraft AI | Alignment. Precision. Readability.</p>
+  </footer>
+</body>
+</html>

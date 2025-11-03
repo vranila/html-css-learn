@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Outline - Detailed Explanation</title>
+  <link rel="stylesheet" href="../Lesson 9 Outline/outline.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Outline</h1>
+    <p>An outline is drawn around an element — outside its border — to make it stand out.</p>
+  </header>
+
+  <main>
+    <!-- Section 1 -->
+    <section class="section">
+      <h2>1️⃣ What is an Outline?</h2>
+      <p>
+        A <strong>CSS outline</strong> is a line drawn <em>outside</em> an element's border.  
+        It does not affect the element’s size or box dimensions.
+      </p>
+
+      <div class="demo basic">
+        <p>This element has a black border and a green outline of 10px.</p>
+      </div>
+
+      <pre><code>div {
+  border: 2px solid black;
+  outline: 10px solid green;
+}</code></pre>
+
+      <p class="note">
+        Note: Outlines differ from borders — outlines sit outside the border and can overlap nearby elements.
+      </p>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section">
+      <h2>2️⃣ Outline Style</h2>
+      <p>The <strong>outline-style</strong> property defines how the outline appears.</p>
+
+      <div class="outline-grid">
+        <p class="dotted">Dotted Outline</p>
+        <p class="dashed">Dashed Outline</p>
+        <p class="solid">Solid Outline</p>
+        <p class="double">Double Outline</p>
+        <p class="groove">Groove Outline</p>
+        <p class="ridge">Ridge Outline</p>
+        <p class="inset">Inset Outline</p>
+        <p class="outset">Outset Outline</p>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="section">
+      <h2>3️⃣ Outline Width</h2>
+      <p>The <strong>outline-width</strong> property controls the thickness of the outline.</p>
+
+      <div class="width-demo">
+        <p class="thin">Thin Outline</p>
+        <p class="medium">Medium Outline</p>
+        <p class="thick">Thick Outline</p>
+        <p class="custom">8px Outline</p>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="section">
+      <h2>4️⃣ Outline Color</h2>
+      <p>The <strong>outline-color</strong> property sets the color of the outline.</p>
+
+      <div class="color-demo">
+        <p class="red">Solid Red Outline</p>
+        <p class="blue">Dotted Blue Outline</p>
+        <p class="green">Outset Green Outline</p>
+      </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="section">
+      <h2>5️⃣ Outline Offset</h2>
+      <p>The <strong>outline-offset</strong> property adds space between the outline and the element’s border.</p>
+
+      <div class="offset-demo positive">
+        <p>Outline 15px outside the border edge</p>
+      </div>
+
+      <div class="offset-demo negative">
+        <p>Outline -5px inside the border edge</p>
+      </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section class="section">
+      <h2>6️⃣ Outline Shorthand</h2>
+      <p>The <strong>outline</strong> shorthand sets width, style, and color in one declaration.</p>
+
+      <div class="shorthand">
+        <p>Outline shorthand: <code>outline: 5px dashed #ff6600;</code></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 | MindCraft AI — CSS Outline Property Demonstration</p>
+  </footer>
+</body>
+</html>

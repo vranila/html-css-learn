@@ -1,0 +1,136 @@
+/* Reset and Layout */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin: 0;
+  background: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #004d99, #0073e6);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* Content */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.section {
+  background: white;
+  border-radius: 10px;
+  padding: 25px 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+  color: #004d99;
+  border-left: 5px solid #004d99;
+  padding-left: 10px;
+}
+
+/* Demo Blocks */
+.demo, .outline-grid p, .width-demo p, .color-demo p, .offset-demo, .shorthand {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 15px 0;
+  text-align: center;
+  font-weight: 500;
+  background: #f0f8ff;
+}
+
+/* Basic Demo */
+.basic {
+  outline: 10px solid green;
+}
+
+/* Outline Styles */
+.outline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.dotted { outline-style: dotted; }
+.dashed { outline-style: dashed; }
+.solid { outline-style: solid; }
+.double { outline-style: double; }
+.groove { outline-style: groove; }
+.ridge { outline-style: ridge; }
+.inset { outline-style: inset; }
+.outset { outline-style: outset; }
+
+/* Outline Width */
+.width-demo p {
+  outline-style: solid;
+  outline-color: green;
+}
+
+.thin { outline-width: thin; }
+.medium { outline-width: medium; }
+.thick { outline-width: thick; }
+.custom { outline-width: 8px; }
+
+/* Outline Color */
+.color-demo p {
+  outline-style: solid;
+  border: 1px solid black;
+}
+
+.red { outline-color: red; }
+.blue { outline-style: dotted; outline-color: blue; }
+.green { outline-style: outset; outline-color: green; }
+
+/* Outline Offset */
+.offset-demo {
+  background: yellow;
+  border: 1px solid black;
+  outline: 3px solid red;
+  margin: 30px 0;
+  padding: 5px;
+}
+
+.offset-demo.positive { outline-offset: 15px; }
+.offset-demo.negative { outline-offset: -5px; }
+
+/* Shorthand */
+.shorthand {
+  outline: 5px dashed #ff6600;
+}
+
+/* Code Styling */
+pre {
+  background: #f1f1f1;
+  border-left: 4px solid #004d99;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+code {
+  color: #c7254e;
+  font-family: "Courier New", monospace;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: #eee;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}

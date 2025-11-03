@@ -1,0 +1,153 @@
+/* GENERAL LAYOUT */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 40px auto;
+  max-width: 900px;
+  line-height: 1.8;
+  background-color: #f9fafb;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #1e3a8a;
+}
+
+.subtitle {
+  color: #555;
+  font-style: italic;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #1d4ed8;
+  border-left: 4px solid #1e3a8a;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.example-box {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* --- TEXT DECORATION LINE --- */
+.overline { text-decoration-line: overline; }
+.line-through { text-decoration-line: line-through; }
+.underline { text-decoration-line: underline; }
+.overline-underline { text-decoration-line: overline underline; }
+
+/* --- TEXT DECORATION COLOR --- */
+.red-overline {
+  text-decoration-line: overline;
+  text-decoration-color: red;
+}
+.blue-through {
+  text-decoration-line: line-through;
+  text-decoration-color: blue;
+}
+.green-underline {
+  text-decoration-line: underline;
+  text-decoration-color: green;
+}
+.purple-combo {
+  text-decoration-line: overline underline;
+  text-decoration-color: purple;
+}
+
+/* --- TEXT DECORATION STYLE --- */
+.solid {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+.double {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+.dotted {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+.dashed {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
+.wavy {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+.red-wavy {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+}
+
+/* --- TEXT DECORATION THICKNESS --- */
+.auto {
+  text-decoration-line: underline;
+  text-decoration-thickness: auto;
+}
+.five {
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+}
+.percent {
+  text-decoration-line: underline;
+  text-decoration-thickness: 25%;
+}
+.red-double {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+  text-decoration-thickness: 5px;
+}
+
+/* --- SHORTHAND PROPERTY --- */
+.short1 {
+  text-decoration: underline;
+}
+.short2 {
+  text-decoration: underline red;
+}
+.short3 {
+  text-decoration: underline red double;
+}
+.short4 {
+  text-decoration: underline red double 5px;
+}
+
+/* --- LINK STYLING --- */
+a {
+  color: #1e40af;
+}
+
+.custom-link {
+  text-decoration: none;
+  color: #9333ea;
+  font-weight: bold;
+}
+
+.custom-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #9333ea;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 40px;
+}

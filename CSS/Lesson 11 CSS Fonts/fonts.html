@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CSS Fonts — Practical Guide & Examples</title>
+
+  <!-- Google Fonts: example (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../Lesson 11 CSS Fonts/fonts.css" />
+</head>
+<body>
+  <header>
+    <h1>CSS Fonts — Practical Guide</h1>
+    <p class="lead">Choose readable, performant fonts. Use fallbacks. Respect accessibility and brand.</p>
+  </header>
+
+  <main>
+    <section class="intro section">
+      <h2>Why Font Selection Matters</h2>
+      <p>
+        The right font strengthens brand identity and affects readability, perception, and trust.
+        On screens, prefer <strong>sans-serif</strong> for UI; use <strong>serif</strong> for editorial tone when appropriate.
+      </p>
+    </section>
+
+    <section class="stack-demo section">
+      <h2>Font-Family: Stacks & Fallbacks</h2>
+      <p class="example serif">Serif stack: <code>font-family: "Merriweather", Georgia, "Times New Roman", serif;</code></p>
+      <p class="example sans">Sans-serif stack: <code>font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;</code></p>
+      <p class="example mono">Monospace stack: <code>font-family: "Courier New", Courier, "Lucida Console", monospace;</code></p>
+      <div class="note">
+        Tip: Put the preferred web font first; finish with a generic family (serif, sans-serif, monospace).
+      </div>
+    </section>
+
+    <section class="weights section">
+      <h2>Weight, Style, Size, Line-height</h2>
+
+      <div class="sample">
+        <h3 class="wf">Weight & style</h3>
+        <p class="wf light">300 — Light</p>
+        <p class="wf regular">400 — Regular</p>
+        <p class="wf semibold">600 — Semi-bold</p>
+        <p class="wf bold">800 — Bold</p>
+      </div>
+
+      <div class="sample">
+        <h3>Size & line-height (readability)</h3>
+        <p class="body">16px / <code>line-height: 1.5</code> is standard for body copy on desktop.</p>
+        <p class="large">Clamp for responsive sizing: <code>font-size: clamp(1rem, 1.2vw + 0.6rem, 1.125rem);</code></p>
+      </div>
+
+      <div class="code">
+<pre><code>body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #111827;
+}</code></pre>
+      </div>
+    </section>
+
+    <section class="webfont section">
+      <h2>Using Web Fonts</h2>
+
+      <h3>@font-face (self-hosted example)</h3>
+      <div class="code">
+<pre><code>@font-face {
+  font-family: "BrandSans";
+  src: url("fonts/BrandSans-Regular.woff2") format("woff2"),
+       url("fonts/BrandSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}</code></pre>
+      </div>
+
+      <h3>Google Fonts (recommended workflow)</h3>
+      <p>Import via &lt;link&gt; (shown in the &lt;head&gt;) and use the family name directly in CSS.</p>
+      <div class="code">
+<pre><code>/* example: Google Font 'Inter' loaded in the head */
+h1 { font-family: "Inter", system-ui, sans-serif; }</code></pre>
+      </div>
+
+      <div class="note">
+        Use <code>font-display: swap</code> to avoid invisible text during font loading and improve perceived performance.
+      </div>
+    </section>
+
+    <section class="accessibility section">
+      <h2>Accessibility & Performance</h2>
+      <ul>
+        <li><strong>Contrast:</strong> Ensure text color passes WCAG contrast (≥4.5:1 for normal text).</li>
+        <li><strong>Fallbacks:</strong> Include system fallbacks to avoid layout shift.</li>
+        <li><strong>Performance:</strong> Limit web font variants (weights/styles) to reduce payload.</li>
+        <li><strong>Legibility:</strong> Prefer 16px+ base, 1.4–1.6 line-height for body text.</li>
+      </ul>
+      <div class="code">
+<pre><code>/* performance tip */
+@font-face { font-display: swap; } /* avoid FOIT (flash of invisible text) */</code></pre>
+      </div>
+    </section>
+
+    <section class="examples section">
+      <h2>Generic Font Family Examples</h2>
+      <div class="grid">
+        <div class="card serif-sample">
+          <h3>Serif</h3>
+          <p style="font-family: 'Merriweather', Georgia, serif;">Merriweather / Georgia — formal, editorial</p>
+        </div>
+
+        <div class="card sans-sample">
+          <h3>Sans-serif</h3>
+          <p style="font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;">Inter / System UI — modern UI</p>
+        </div>
+
+        <div class="card mono-sample">
+          <h3>Monospace</h3>
+          <p style="font-family: 'Courier New', Courier, monospace;">Courier New — code, tabular data</p>
+        </div>
+
+        <div class="card cursive-sample">
+          <h3>Cursive</h3>
+          <p style="font-family: 'Brush Script MT', cursive;">Brush Script — decorative, sparing use</p>
+        </div>
+
+        <div class="card fantasy-sample">
+          <h3>Fantasy</h3>
+          <p style="font-family: 'Copperplate', fantasy;">Copperplate — decorative / display</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="practical section">
+      <h2>Practical Patterns & Tips</h2>
+      <ol>
+        <li><strong>UI headings:</strong> Use system stack for instant rendering — e.g. <code>font-family: Inter, system-ui, sans-serif;</code>.</li>
+        <li><strong>Editorial body:</strong> Use a readable serif or robust sans with moderate line-height.</li>
+        <li><strong>Icon fonts:</strong> Prefer SVG or icon fonts with CSS fallback.</li>
+        <li><strong>Avoid:</strong> too many custom web fonts and dramatic uppercase on long copy.</li>
+      </ol>
+
+      <div class="code">
+<pre><code>/* Responsive headline example */
+h1 {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: clamp(1.75rem, 2.5vw + 0.5rem, 3rem);
+  line-height: 1.1;
+  font-weight: 700;
+}</code></pre>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <small>© 2025 MindCraft AI — CSS Fonts Guide</small>
+  </footer>
+</body>
+</html>
