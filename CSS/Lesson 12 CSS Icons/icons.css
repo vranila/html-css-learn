@@ -1,0 +1,109 @@
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(90deg, #007bff, #6610f2);
+  color: white;
+  padding: 2rem 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  padding: 2rem;
+}
+
+.icon-section {
+  background: white;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon-section h2 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-size: 36px;
+}
+
+.icon-container i {
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.icon-container i:hover {
+  transform: scale(1.2);
+  color: #007bff;
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: #ddd;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Font Awesome Section Enhancements */
+.icon-description {
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.icon-box span {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Icon-specific Colors */
+.fa-cloud {
+  color: #17a2b8;
+}
+
+.fa-heart {
+  color: #e74c3c;
+}
+
+.fa-car {
+  color: #f39c12;
+}
+
+.fa-file {
+  color: #6f42c1;
+}
+
+.fa-bars {
+  color: #28a745;
+}
+
+/* Hover Effect */
+.icon-box:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Table Border Concepts</title>
+  <link rel="stylesheet" href="../Lesson 15 CSS Table/border.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Table Border Concepts</h1>
+    <p>Understanding table borders, spacing, padding, and collapse behavior using CSS.</p>
+  </header>
+
+  <section class="example">
+    <h2>1️⃣ CSS Table Borders</h2>
+    <p>The <code>border</code> property defines the width, style, and color of borders applied to <code>table</code>, <code>th</code>, and <code>td</code>.</p>
+    <table class="table-border">
+      <tr><th>First Name</th><th>Last Name</th></tr>
+      <tr><td>Peter</td><td>Griffin</td></tr>
+      <tr><td>Lois</td><td>Griffin</td></tr>
+    </table>
+  </section>
+
+  <section class="example">
+    <h2>2️⃣ CSS Table Border Color</h2>
+    <p>You can control border color by specifying it directly in the <code>border</code> property.</p>
+    <table class="table-border-color">
+      <tr><th>First Name</th><th>Last Name</th></tr>
+      <tr><td>John</td><td>Doe</td></tr>
+      <tr><td>Jane</td><td>Smith</td></tr>
+    </table>
+  </section>
+
+  <section class="example">
+    <h2>3️⃣ CSS Collapse Table Borders</h2>
+    <p>Using <code>border-collapse: collapse;</code> merges cell borders into a single border.</p>
+    <table class="table-collapse">
+      <tr><th>First Name</th><th>Last Name</th></tr>
+      <tr><td>Peter</td><td>Griffin</td></tr>
+      <tr><td>Lois</td><td>Griffin</td></tr>
+    </table>
+  </section>
+
+  <section class="example">
+    <h2>4️⃣ CSS Table Padding</h2>
+    <p>The <code>padding</code> property controls the space between cell content and cell borders.</p>
+    <table class="table-padding">
+      <tr><th>First Name</th><th>Last Name</th><th>Savings</th></tr>
+      <tr><td>Peter</td><td>Griffin</td><td>$100</td></tr>
+      <tr><td>Lois</td><td>Griffin</td><td>$150</td></tr>
+      <tr><td>Joe</td><td>Swanson</td><td>$300</td></tr>
+    </table>
+  </section>
+
+  <section class="example">
+    <h2>5️⃣ CSS Border Spacing</h2>
+    <p>The <code>border-spacing</code> property adds space between cell borders. Works only when <code>border-collapse</code> is set to <code>separate</code>.</p>
+    <table class="table-spacing">
+      <tr><th>First Name</th><th>Last Name</th></tr>
+      <tr><td>Peter</td><td>Griffin</td></tr>
+      <tr><td>Lois</td><td>Griffin</td></tr>
+    </table>
+  </section>
+
+  <section class="example">
+    <h2>6️⃣ CSS Outside Table Borders</h2>
+    <p>If you only want an outer border around the table (not the inner cells), apply the <code>border</code> only to the <code>table</code> element.</p>
+    <table class="table-outside">
+      <tr><th>First Name</th><th>Last Name</th></tr>
+      <tr><td>Peter</td><td>Griffin</td></tr>
+      <tr><td>Lois</td><td>Griffin</td></tr>
+    </table>
+  </section>
+</body>
+</html>

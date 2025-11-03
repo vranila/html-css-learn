@@ -1,0 +1,158 @@
+/* General Page Styling */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  margin: 0;
+  padding: 40px;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.intro {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Basic Links */
+.basic-links a {
+  color: hotpink;
+  background-color: yellow;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* Link States */
+.state-links a:link {
+  color: red;
+}
+
+.state-links a:visited {
+  color: green;
+}
+
+.state-links a:hover {
+  color: hotpink;
+}
+
+.state-links a:active {
+  color: blue;
+}
+
+/* Remove underline */
+.no-underline a:link,
+.no-underline a:visited {
+  text-decoration: none;
+}
+
+.no-underline a:hover,
+.no-underline a:active {
+  text-decoration: underline;
+}
+
+/* Background Color Links */
+.background-links a:link {
+  background-color: yellow;
+  padding: 8px 14px;
+  text-decoration: none;
+  color: black;
+}
+
+.background-links a:visited {
+  background-color: cyan;
+}
+
+.background-links a:hover {
+  background-color: lightgreen;
+}
+
+.background-links a:active {
+  background-color: hotpink;
+}
+
+/* Link Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: red;
+}
+
+.btn.outline {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+}
+
+.btn.outline:hover {
+  background-color: green;
+  color: white;
+}
+
+/* Advanced Examples */
+a.one:link { color: red; }
+a.one:visited { color: blue; }
+a.one:hover { color: orange; }
+
+a.two:link { color: red; }
+a.two:visited { color: blue; }
+a.two:hover { font-size: 150%; }
+
+a.three:link { color: red; }
+a.three:visited { color: blue; }
+a.three:hover { background: lightgreen; }
+
+a.four:link { color: red; }
+a.four:visited { color: blue; }
+a.four:hover { font-family: monospace; }
+
+a.five:link { color: red; text-decoration: none; }
+a.five:visited { color: blue; text-decoration: none; }
+a.five:hover { text-decoration: underline; }
+
+/* Cursor Demo */
+.cursor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cursor-grid span {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 14px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+}

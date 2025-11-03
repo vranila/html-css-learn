@@ -1,0 +1,79 @@
+/* ======= GLOBAL PAGE STYLING ======= */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #f5f7fa;
+  color: #222;
+  margin: 40px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #0078d4;
+  text-shadow: 1px 1px 2px #aaa;
+}
+
+section.example {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ======= 1️⃣ CSS Table Borders ======= */
+.table-border, .table-border th, .table-border td {
+  border: 1px solid black;
+  border-collapse: separate; /* default */
+  padding: 8px;
+}
+
+/* ======= 2️⃣ CSS Table Border Color ======= */
+.table-border-color, .table-border-color th, .table-border-color td {
+  border: 1px solid green;
+  border-collapse: separate;
+  padding: 8px;
+}
+
+/* ======= 3️⃣ CSS Collapse Table Borders ======= */
+.table-collapse, .table-collapse th, .table-collapse td {
+  border: 1px solid #444;
+  border-collapse: collapse; /* removes double borders */
+  padding: 8px;
+}
+
+/* ======= 4️⃣ CSS Table Padding ======= */
+.table-padding {
+  border-collapse: collapse;
+  width: 70%;
+}
+.table-padding th, .table-padding td {
+  border: 1px solid #888;
+  padding: 15px; /* adds internal spacing */
+}
+
+/* ======= 5️⃣ CSS Border Spacing ======= */
+.table-spacing {
+  border-collapse: separate;
+  border-spacing: 15px; /* adds space between cells */
+  border: 2px solid #0078d4;
+}
+.table-spacing th, .table-spacing td {
+  border: 1px solid #999;
+  padding: 10px;
+}
+
+/* ======= 6️⃣ CSS Outside Table Borders ======= */
+.table-outside {
+  border: 2px solid #ff5722; /* only outer border */
+  border-collapse: separate;
+  width: 70%;
+}
+.table-outside th, .table-outside td {
+  border: none; /* no inner borders */
+  padding: 10px;
+  text-align: left;
+}

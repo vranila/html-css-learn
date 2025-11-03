@@ -1,0 +1,69 @@
+/* ======= Page Styling ======= */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #f8fafc;
+  color: #222;
+  margin: 40px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #0078d4;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+section.example {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ======= Base Table Styling ======= */
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Alternate Row Styling */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e6f5ff;
+}
+
+/* ======= 1️⃣ Horizontal Alignment ======= */
+.table-center td {
+  text-align: center;
+}
+
+.table-left th {
+  text-align: left;
+}
+
+/* ======= 2️⃣ Vertical Alignment ======= */
+.table-bottom td {
+  height: 60px;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+/* ======= Table Headers ======= */
+th {
+  background-color: #eaf3ff;
+  font-weight: bold;
+}

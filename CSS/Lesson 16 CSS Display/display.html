@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Display Property Examples</title>
+  <link rel="stylesheet" href="../Lesson 16 CSS Display/display.css">
+</head>
+<body>
+
+  <header>
+    <h1>CSS Display Property</h1>
+    <p>The <strong>display</strong> property controls how an element is rendered in the layout — block, inline, flex, grid, or hidden.</p>
+  </header>
+
+  <section class="example">
+    <h2>1️⃣ Block-level Elements</h2>
+    <p>Block-level elements start on a new line and stretch the full width available:</p>
+    <div class="block-demo">
+      <div class="block-box">DIV 1</div>
+      <div class="block-box">DIV 2</div>
+    </div>
+  </section>
+
+  <section class="example">
+    <h2>2️⃣ Inline Elements</h2>
+    <p>Inline elements only take up as much width as needed:</p>
+    <p>This is an <span class="inline-demo">INLINE</span> element inside a sentence.</p>
+  </section>
+
+  <section class="example">
+    <h2>3️⃣ Inline-Block Elements</h2>
+    <p>Inline-block elements flow inline, but you can apply width and height:</p>
+    <div class="inline-block-demo">
+      <div class="inline-block-box">Box 1</div>
+      <div class="inline-block-box">Box 2</div>
+      <div class="inline-block-box">Box 3</div>
+    </div>
+  </section>
+
+  <section class="example">
+    <h2 >4️⃣ display: none (Hide Element)</h2>
+    <p>Elements with <code>display: none</code> are completely removed from the layout flow.</p>
+    <button onclick="togglePanel()">Click to Toggle Hidden Panel</button>
+    <div id="panel" class="hidden-panel">
+      <p>This panel is now visible!</p>
+    </div>
+  </section>
+
+  <section class="example">
+    <h2>5️⃣ Flexbox Layout</h2>
+    <p><code>display: flex</code> creates a flexible layout container.</p>
+    <div class="flex-container">
+      <div class="flex-item">Flex 1</div>
+      <div class="flex-item">Flex 2</div>
+      <div class="flex-item">Flex 3</div>
+    </div>
+  </section>
+
+  <section class="example">
+    <h2>6️⃣ Grid Layout</h2>
+    <p><code>display: grid</code> creates a grid-based layout.</p>
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+    </div>
+  </section>
+
+  <section class="example">
+    <h2>7️⃣ Override Default Display</h2>
+    <p>Turning <code>&lt;li&gt;</code> elements into inline to create a horizontal menu:</p>
+    <ul class="menu">
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </section>
+
+  <script>
+    function togglePanel() {
+      var panel = document.getElementById("panel");
+      panel.style.display = (panel.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

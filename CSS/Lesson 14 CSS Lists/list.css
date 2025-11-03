@@ -1,0 +1,125 @@
+/* General Layout */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 40px;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.intro {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #34495e;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+  margin-top: 40px;
+}
+
+/* Unordered List Styles */
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: disc;
+}
+
+ul.c {
+  list-style-type: square;
+}
+
+/* Ordered List Styles */
+ol.d {
+  list-style-type: upper-roman;
+}
+
+ol.e {
+  list-style-type: lower-roman;
+}
+
+ol.f {
+  list-style-type: lower-alpha;
+}
+
+/* Custom Image Marker */
+ul.custom-image {
+  list-style-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3c/Red_dot.svg');
+  list-style-type: square;
+}
+
+/* Marker Positioning */
+ul.pos-a {
+  list-style-position: outside;
+}
+
+ul.pos-b {
+  list-style-position: inside;
+  background-color: #eef;
+  padding: 15px;
+}
+
+/* Remove Markers */
+ul.no-marker {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.no-marker li {
+  background-color: #dfe6e9;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+/* Shorthand Example */
+ul.shorthand {
+  list-style: square inside url("https://upload.wikimedia.org/wikipedia/commons/d/d1/Blue_dot.svg");
+}
+
+/* Colorful Lists */
+ol.colored {
+  background: salmon;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+ol.colored li {
+  background: mistyrose;
+  color: darkred;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 4px;
+}
+
+ul.colored-ul {
+  background: powderblue;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+ul.colored-ul li {
+  background: mistyrose;
+  color: darkblue;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #777;
+  margin-top: 60px;
+}

@@ -1,0 +1,79 @@
+/* ======= Global Page Styling ======= */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #f8fafc;
+  color: #222;
+  margin: 40px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #0078d4;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+section.example {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ======= Base Table Style ======= */
+table {
+  border-collapse: collapse;
+  text-align: left;
+  border: 1px solid #aaa;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #aaa;
+  padding: 10px;
+}
+
+/* ======= 1️⃣ Full Width ======= */
+.table-full {
+  width: 100%;
+}
+
+/* ======= 2️⃣ Half Width ======= */
+.table-half {
+  width: 50%;
+}
+
+/* ======= 3️⃣ Fixed Width ======= */
+.table-fixed {
+  width: 500px;
+}
+
+/* ======= 4️⃣ Auto Width ======= */
+.table-auto {
+  width: auto;
+}
+
+/* ======= 5️⃣ Fixed Header Height ======= */
+.table-height th {
+  height: 70px;
+  background-color: #e8f5ff;
+}
+
+/* ======= Extras ======= */
+table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #e0f7ff;
+  transition: 0.3s;
+}

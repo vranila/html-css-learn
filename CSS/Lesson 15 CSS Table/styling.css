@@ -1,0 +1,74 @@
+/* ===== General Page Setup ===== */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f4f7fa;
+  color: #333;
+  margin: 40px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: #0078d4;
+}
+
+section.example {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== Base Table Styling ===== */
+table {
+  width: 70%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* 1️⃣ Padding Example */
+.table-padding th, 
+.table-padding td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* 2️⃣ Horizontal Divider Example */
+.table-divider th, 
+.table-divider td {
+  border-bottom: 1px solid #ddd;
+}
+
+/* 3️⃣ Hoverable Table */
+.table-hover tr:hover {
+  background-color: coral;
+  color: white;
+  cursor: pointer;
+}
+
+/* 4️⃣ Zebra-striped Table */
+.table-zebra tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* 5️⃣ Table Header Colors */
+.table-color th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Consistent header styling */
+th {
+  font-weight: bold;
+  text-transform: capitalize;
+}
