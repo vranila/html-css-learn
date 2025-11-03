@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Flexbox</title>
+<style>
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin: 30px;
+  background: #f4f6f8;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #0078d4;
+  margin-bottom: 30px;
+}
+
+.example {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.flex-container {
+  display: flex;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.flex-item {
+  background-color: #0078d4;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 6px;
+  flex: 1 1 100px;
+}
+
+/* Example: Flex Direction */
+.row { flex-direction: row; }
+.row-reverse { flex-direction: row-reverse; }
+.column { flex-direction: column; }
+.column-reverse { flex-direction: column-reverse; }
+
+/* Example: Justify Content */
+.center { justify-content: center; }
+.space-between { justify-content: space-between; }
+.space-around { justify-content: space-around; }
+.space-evenly { justify-content: space-evenly; }
+
+/* Example: Align Items */
+.align-start { align-items: flex-start; height: 150px; }
+.align-center { align-items: center; height: 150px; }
+.align-end { align-items: flex-end; height: 150px; }
+
+/* Example: Align Content */
+.align-content-example {
+  flex-wrap: wrap;
+  height: 200px;
+  align-content: space-around;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .flex-item {
+    flex: 1 1 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Flexbox Examples</h1>
+
+<div class="example">
+  <h2>1. What is Flexbox?</h2>
+  <p>CSS Flexbox (Flexible Box Layout) is a layout model that arranges elements predictably — even when their size is dynamic or unknown. It provides powerful alignment and distribution along both horizontal and vertical axes.</p>
+</div>
+
+<div class="example">
+  <h2>2. Basic Flex Container</h2>
+  <p>To create a flex container, use <code>display: flex;</code> on a parent element. The child elements automatically become flex items.</p>
+  <div class="flex-container">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+  </div>
+</div>
+
+<div class="example">
+  <h2>3. Flex Direction</h2>
+  <p>The <code>flex-direction</code> property defines the direction of the flex items.</p>
+  <p><b>row</b> (default): left to right</p>
+  <div class="flex-container row">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+  </div>
+
+  <p><b>column:</b> top to bottom</p>
+  <div class="flex-container column">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+  </div>
+</div>
+
+<div class="example">
+  <h2>4. Justify Content</h2>
+  <p>The <code>justify-content</code> property aligns items horizontally.</p>
+  <p><b>Center:</b></p>
+  <div class="flex-container center">
+    <div class="flex-item">A</div>
+    <div class="flex-item">B</div>
+    <div class="flex-item">C</div>
+  </div>
+
+  <p><b>Space Between:</b></p>
+  <div class="flex-container space-between">
+    <div class="flex-item">A</div>
+    <div class="flex-item">B</div>
+    <div class="flex-item">C</div>
+  </div>
+
+  <p><b>Space Around:</b></p>
+  <div class="flex-container space-around">
+    <div class="flex-item">A</div>
+    <div class="flex-item">B</div>
+    <div class="flex-item">C</div>
+  </div>
+</div>
+
+<div class="example">
+  <h2>5. Align Items</h2>
+  <p>The <code>align-items</code> property aligns flex items vertically.</p>
+
+  <p><b>flex-start:</b></p>
+  <div class="flex-container align-start">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+  </div>
+
+  <p><b>center:</b></p>
+  <div class="flex-container align-center">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+  </div>
+
+  <p><b>flex-end:</b></p>
+  <div class="flex-container align-end">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+  </div>
+</div>
+
+<div class="example">
+  <h2>6. Align Content</h2>
+  <p>The <code>align-content</code> property aligns multiple rows of items when there’s extra space in the cross-axis.</p>
+  <div class="flex-container align-content-example">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+    <div class="flex-item">5</div>
+    <div class="flex-item">6</div>
+  </div>
+</div>
+
+<div class="example">
+  <h2>7. Flex Wrap</h2>
+  <p>The <code>flex-wrap</code> property allows items to wrap onto multiple lines when they overflow the container width.</p>
+  <div class="flex-container" style="flex-wrap: wrap;">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+    <div class="flex-item">5</div>
+    <div class="flex-item">6</div>
+  </div>
+</div>
+
+<div class="example">
+  <h2>8. Flex Property (Grow, Shrink, Basis)</h2>
+  <p>The <code>flex</code> property is a shorthand for <b>flex-grow</b>, <b>flex-shrink</b>, and <b>flex-basis</b>.</p>
+  <div class="flex-container">
+    <div class="flex-item" style="flex: 1;">1</div>
+    <div class="flex-item" style="flex: 2;">2 (double width)</div>
+    <div class="flex-item" style="flex: 1;">3</div>
+  </div>
+</div>
+
+</body>
+</html>

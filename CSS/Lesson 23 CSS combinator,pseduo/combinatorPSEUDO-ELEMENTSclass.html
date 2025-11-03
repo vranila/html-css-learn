@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Combinators, Pseudo-classes & Pseudo-elements</title>
+  <link rel="stylesheet" href="../Lesson 23 CSS combinator,pseduo/combinatorPSEUDO-ELEMENTSclass.css">
+</head>
+<body>
+
+  <header>
+    <h1>CSS Combinators, Pseudo-classes & Pseudo-elements</h1>
+    <p>Learn how selectors interact, respond to user states, and style specific text parts.</p>
+  </header>
+
+  <!-- SECTION 1: CSS COMBINATORS -->
+  <section class="example">
+    <h2>1. CSS Combinators</h2>
+    <p>A combinator defines the relationship between two selectors.</p>
+
+    <div class="combinator-box">
+      <h3>Descendant Combinator (space)</h3>
+      <div class="descendant">
+        <p>This paragraph is inside a div.</p>
+        <section><p>This paragraph is inside a section inside the div.</p></section>
+      </div>
+
+      <h3>Child Combinator (&gt;)</h3>
+      <div class="child">
+        <p>This paragraph is a direct child.</p>
+        <section><p>This paragraph is nested deeper and will not be styled.</p></section>
+      </div>
+
+      <h3>Next Sibling (+)</h3>
+      <div class="next-sibling">This is a div.</div>
+      <p>This paragraph immediately follows the div.</p>
+      <p>This paragraph does NOT immediately follow the div.</p>
+
+      <h3>Subsequent Sibling (~)</h3>
+      <div class="sub-sibling">This is another div.</div>
+      <p>Paragraph #1 - next sibling of div</p>
+      <p>Paragraph #2 - also a next sibling of div</p>
+    </div>
+  </section>
+
+  <!-- SECTION 2: PSEUDO-CLASSES -->
+  <section class="example">
+    <h2>2. CSS Pseudo-classes</h2>
+
+    <h3>Link States</h3>
+    <a href="#">Unvisited Link</a>
+    <a href="#">Visited Link</a>
+    <a href="#">Hover Me</a>
+    <a href="#">Active Link</a>
+
+    <h3>:hover on div</h3>
+    <div class="hover-box">Hover over me</div>
+
+    <h3>:focus on Input</h3>
+    <input type="text" placeholder="Click to focus">
+  </section>
+
+  <!-- SECTION 3: PSEUDO-ELEMENTS -->
+  <section class="example">
+    <h2>3. CSS Pseudo-elements</h2>
+
+    <p class="first-line-letter">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod quam a sapien tempor, non viverra metus cursus.
+    </p>
+
+    <h3>Before and After Example</h3>
+    <h3 class="before-after">This is a heading</h3>
+
+    <h3>List Marker Styling</h3>
+    <ul class="custom-list">
+      <li>Frontend</li>
+      <li>Backend</li>
+      <li>Full Stack</li>
+    </ul>
+
+    <h3>Selection Styling</h3>
+    <p class="selection-text">Try selecting this text with your mouse to see custom selection color.</p>
+  </section>
+
+</body>
+</html>

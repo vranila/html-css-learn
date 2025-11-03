@@ -1,0 +1,119 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin: 0;
+  background: #f5f7fa;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background: #0078d4;
+  color: white;
+  padding: 30px 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.example {
+  background: #fff;
+  border-radius: 10px;
+  margin: 40px auto;
+  padding: 20px;
+  width: 80%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #0078d4;
+  margin-bottom: 10px;
+}
+
+/* 1. Center Align Block Element */
+.center-block {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 2. Center Align Text */
+.text-center {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* 3. Center Align Image */
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 10px;
+}
+
+/* 4. Flexbox Center */
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+  background: #eafaf1;
+}
+
+/* 5. Grid Center */
+.center-grid {
+  display: grid;
+  place-items: center;
+  height: 200px;
+  border: 3px solid green;
+  background: #f0fff4;
+}
+
+/* 6. Position: Absolute */
+.position-demo {
+  position: relative;
+  height: 150px;
+}
+.right-pos {
+  position: absolute;
+  right: 0;
+  width: 300px;
+  border: 3px solid green;
+  padding: 10px;
+  background: #f6fff0;
+}
+
+/* 7. Float Right */
+.right-float {
+  float: right;
+  width: 300px;
+  border: 3px solid green;
+  padding: 10px;
+  background: #f4fff7;
+}
+
+/* 8. Center Align with Transform */
+.container {
+  position: relative;
+  height: 200px;
+  border: 3px solid green;
+  background: #f2fff5;
+}
+
+.container p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

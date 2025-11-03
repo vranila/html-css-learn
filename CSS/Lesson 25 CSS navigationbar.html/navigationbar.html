@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Navigation Bars</title>
+<style>
+/* Base reset for nav lists */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Vertical Navigation Bar */
+.vertical-nav {
+  width: 200px;
+  background-color: #333;
+}
+.vertical-nav li a {
+  display: block;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+}
+.vertical-nav li a:hover {
+  background-color: #111;
+}
+
+/* Horizontal Navigation Bar */
+.horizontal-nav {
+  overflow: hidden;
+  background-color: #333;
+}
+.horizontal-nav li {
+  float: left;
+}
+.horizontal-nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.horizontal-nav li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Navigation Bars</h1>
+<p>Having an easy-to-use navigation is essential for any website. Navigation bars help users quickly move between sections of a site.</p>
+
+<h2>Vertical Navigation Bar</h2>
+<p>Example of a simple vertical navigation bar:</p>
+
+<ul class="vertical-nav">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">News</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">About</a></li>
+</ul>
+
+<h2>Horizontal Navigation Bar</h2>
+<p>Example of a horizontal navigation bar:</p>
+
+<ul class="horizontal-nav">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">News</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">About</a></li>
+</ul>
+
+<hr>
+
+<h2>Code Explanation</h2>
+<p>A navigation bar is built using an unordered list (<code>&lt;ul&gt;</code>) with list items (<code>&lt;li&gt;</code>) containing links (<code>&lt;a&gt;</code>).</p>
+
+<pre>
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="default.asp"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="news.asp"&gt;News&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="contact.asp"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="about.asp"&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<p>Then, you remove default list styling and paddings to clean up the layout:</p>
+
+<pre>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+</pre>
+
+<ul>
+<li><b>list-style-type: none;</b> – Removes bullet points</li>
+<li><b>margin: 0;</b> – Removes default browser margins</li>
+<li><b>padding: 0;</b> – Removes default browser paddings</li>
+</ul>
+
+<hr>
+
+<p><b>Note:</b> This base code is used for both <b>vertical</b> and <b>horizontal</b> navigation bars, depending on how you structure and style the list.</p>
+
+</body>
+</html>

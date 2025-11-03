@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Layout</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      margin: 30px;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0078d4;
+      margin-bottom: 40px;
+    }
+
+    .example {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 40px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .grid-container {
+      display: grid;
+      gap: 10px;
+      background-color: #ddd;
+      padding: 10px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .grid-item {
+      background-color: #0078d4;
+      color: white;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* 1. Simple Grid with Explicit Columns */
+    .grid-basic {
+      grid-template-columns: auto auto auto;
+    }
+
+    /* 2. Grid with Fractional Units */
+    .grid-fr {
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    /* 3. Grid using repeat() */
+    .grid-repeat {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* 4. Grid Template Areas */
+    .grid-area {
+      grid-template-areas:
+        "header header header"
+        "sidebar content content"
+        "footer footer footer";
+      grid-template-columns: 1fr 2fr 2fr;
+      grid-template-rows: auto 200px auto;
+    }
+
+    .header { grid-area: header; background: #0078d4; }
+    .sidebar { grid-area: sidebar; background: #27ae60; }
+    .content { grid-area: content; background: #f39c12; }
+    .footer { grid-area: footer; background: #8e44ad; }
+
+    /* 5. Aligning Items */
+    .grid-align {
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      justify-content: center; /* horizontal alignment of grid */
+      align-content: center;   /* vertical alignment of grid */
+      height: 300px;
+    }
+
+    /* 6. Responsive Grid */
+    .grid-responsive {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    @media (max-width: 600px) {
+      .example {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Grid Layout Examples</h1>
+
+  <!-- 1. Basic Grid -->
+  <div class="example">
+    <h2>1. Basic Grid</h2>
+    <p>Use <code>display: grid;</code> and <code>grid-template-columns</code> to define columns.</p>
+    <div class="grid-container grid-basic">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div>
+  </div>
+
+  <!-- 2. Fractional Units -->
+  <div class="example">
+    <h2>2. Fractional Units (fr)</h2>
+    <p>The <code>fr</code> unit distributes available space proportionally between columns.</p>
+    <div class="grid-container grid-fr">
+      <div class="grid-item">1fr</div>
+      <div class="grid-item">2fr</div>
+      <div class="grid-item">1fr</div>
+    </div>
+  </div>
+
+  <!-- 3. repeat() Function -->
+  <div class="example">
+    <h2>3. repeat() Function</h2>
+    <p>The <code>repeat()</code> function simplifies repetitive column definitions.</p>
+    <div class="grid-container grid-repeat">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+    </div>
+  </div>
+
+  <!-- 4. Grid Areas -->
+  <div class="example">
+    <h2>4. Grid Template Areas</h2>
+    <p>Use <code>grid-template-areas</code> to visually map out layouts like headers, sidebars, and footers.</p>
+    <div class="grid-container grid-area">
+      <div class="grid-item header">Header</div>
+      <div class="grid-item sidebar">Sidebar</div>
+      <div class="grid-item content">Main Content</div>
+      <div class="grid-item footer">Footer</div>
+    </div>
+  </div>
+
+  <!-- 5. Alignment -->
+  <div class="example">
+    <h2>5. Alignment (justify-content / align-content)</h2>
+    <p>Align grid tracks horizontally and vertically within the container.</p>
+    <div class="grid-container grid-align">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div>
+  </div>
+
+  <!-- 6. Responsive Grid -->
+  <div class="example">
+    <h2>6. Responsive Grid with auto-fit + minmax()</h2>
+    <p>This approach automatically adjusts the number of columns based on screen width.</p>
+    <div class="grid-container grid-responsive">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+    </div>
+  </div>
+
+</body>
+</html>

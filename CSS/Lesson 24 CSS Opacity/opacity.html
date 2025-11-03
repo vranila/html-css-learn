@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Opacity</title>
+<style>
+/* Image opacity examples */
+img.low { opacity: 0.2; }
+img.medium { opacity: 0.5; }
+img.full { opacity: 1.0; }
+
+/* Hover opacity */
+img.hover-effect { opacity: 0.5; transition: opacity 0.3s; }
+img.hover-effect:hover { opacity: 1.0; }
+
+/* Reverse hover effect */
+img.reverse-hover:hover { opacity: 0.5; }
+
+/* Transparent boxes */
+div.transparency { opacity: 0.3; border: 2px solid black; padding: 10px; margin: 10px; }
+
+/* RGBA background transparency */
+div.rgba-box {
+  background: rgba(4, 170, 109, 0.3);
+  padding: 10px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+/* Transparent box with text */
+div.background {
+  background: url('https://www.w3schools.com/css/klematis.jpg') repeat;
+  border: 2px solid black;
+  padding: 10px;
+}
+div.transbox {
+  margin: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid black;
+}
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Opacity</h1>
+<p>The <b>opacity</b> property controls the transparency of an element. Values range from <b>0.0</b> (transparent) to <b>1.0</b> (opaque).</p>
+
+<h2>Image Opacity Examples</h2>
+<img src="https://www.w3schools.com/css/img_forest.jpg" class="low" width="150" alt="Forest"> opacity 0.2 <br><br>
+<img src="https://www.w3schools.com/css/img_forest.jpg" class="medium" width="150" alt="Forest"> opacity 0.5 <br><br>
+<img src="https://www.w3schools.com/css/img_forest.jpg" class="full" width="150" alt="Forest"> opacity 1.0 (default) <br><br>
+
+<h2>Opacity and Hover</h2>
+<p>Hover over the images to see the effect:</p>
+<img src="https://www.w3schools.com/css/img_lights.jpg" class="hover-effect" width="150" alt="Northern Lights">
+<img src="https://www.w3schools.com/css/img_mountains.jpg" class="hover-effect" width="150" alt="Mountains">
+<img src="https://www.w3schools.com/css/img_italy.jpg" class="hover-effect" width="150" alt="Italy">
+
+<h2>Reversed Hover Effect</h2>
+<p>Hovering decreases opacity:</p>
+<img src="https://www.w3schools.com/css/img_lights.jpg" class="reverse-hover" width="150" alt="Northern Lights">
+<img src="https://www.w3schools.com/css/img_mountains.jpg" class="reverse-hover" width="150" alt="Mountains">
+<img src="https://www.w3schools.com/css/img_italy.jpg" class="reverse-hover" width="150" alt="Italy">
+
+<h2>Transparent Boxes</h2>
+<div class="transparency">opacity 1</div>
+<div class="transparency" style="opacity:0.6;">opacity 0.6</div>
+<div class="transparency" style="opacity:0.3;">opacity 0.3</div>
+<div class="transparency" style="opacity:0.1;">opacity 0.1</div>
+
+<h2>Transparency using RGBA</h2>
+<div class="rgba-box">100% opacity (RGBA: 1.0)</div>
+<div class="rgba-box" style="background: rgba(4, 170, 109, 0.6);">60% opacity (RGBA: 0.6)</div>
+<div class="rgba-box" style="background: rgba(4, 170, 109, 0.3);">30% opacity (RGBA: 0.3)</div>
+<div class="rgba-box" style="background: rgba(4, 170, 109, 0.1);">10% opacity (RGBA: 0.1)</div>
+
+<h2>Text in Transparent Box</h2>
+<div class="background">
+  <div class="transbox">
+    <p>This is some text that is placed in the transparent box.</p>
+  </div>
+</div>
+
+
+
+</body>
+</html>
