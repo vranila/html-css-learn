@@ -1,0 +1,237 @@
+<!-- pseudo class   examples  
+ hover(while hovering to button its color will change) 
+ active(clicking on button color will change)
+ -->
+
+ <!-- opacity value is from 0 to 1 
+  Zero 0 means no fade 
+  1 means full fade -->
+
+  <!--transition : giveproperty timeinseconds 
+  eg: transition:opacity 1s or 0.15s , color 1s;-->
+
+
+  <!-- shadows 
+   box - shadow : horizontal_position(right side) vertical_position(right and down side) blured colour
+   eg box-shadow:10px 10px 1px red 
+   in color instead of red we can use rgba(0,0,0,0.15)
+   red green blue a means opacity 0 to 1 will be value
+   transition property will work in shadows-->
+
+<style>
+    .button4{
+        background-color: black;
+        color: white;
+        border: none;
+        height: 45px;
+        width: 110px;
+        font-size: 12px;
+        cursor: pointer;
+        margin-left: 8px;
+    }
+
+    .button4:hover{
+        opacity: 0.9;
+    }
+
+    .button5{
+        background-color: rgb(255, 216, 20);
+        color: black;
+        border: none;
+        height: 35px;
+        width: 160px;
+        font-weight: 100px;
+        border-radius: 18px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-left: 8px;
+    }
+
+    .button5:hover{
+        background-color: rgb(238, 205, 3);
+    }
+
+    .button6{
+        background-color: rgb(46, 164, 79);
+        color: white;
+        border: none;
+        height: 40px;
+        width: 100px;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 8px;
+        transition: hover 1s;
+    }
+
+    .button6:hover{
+        box-shadow:0px 5px 9px rgba(0,0,0,0.15) ; 
+    }
+
+     .button7{
+        background-color: rgb(121, 82, 179);
+        color: white;
+        border: none;
+        height: 40px;
+        width: 100px;
+        font-weight: bold;
+        border-radius: 4px;
+        font-size: 13px;
+        cursor: pointer;
+        margin-left: 8px;
+    }
+
+    .button7{
+        background-color: rgb(99, 60, 156);
+    }
+
+    .button8{
+        background-color: white;
+        color: rgb(108, 117, 125);
+        border-color:  rgb(121, 82, 179);
+        border-width: 1px;
+        height: 40px;
+        width: 100px;
+        font-weight: bold;
+        border-radius: 4px;
+        font-size: 13px;
+        cursor: pointer;
+        margin-left: 8px;
+    }
+
+    .button8:hover {
+    background-color: rgb(108, 117, 125);
+    color: white;
+    }
+
+    .button9{
+        background-color: rgb(10, 102, 194);
+        color: white;
+        border: none;
+        border-width: 1px;
+        height: 30px;
+        width: 250px;
+        font-weight: bold;
+        border-radius: 18px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .button9:hover {
+    background-color: rgb(2, 70, 138);
+  }
+      .button10{
+        color: rgb(10, 102, 194);
+        background-color: white;
+        border-color:rgb(10, 102, 194) ;
+        border-width: 1px;
+        height: 30px;
+        width: 60px;
+        font-weight: bold;
+        border-radius: 18px;
+        font-size: 13px;
+        cursor: pointer;
+        margin-left: 8px;
+    }
+
+    .button10:hover{
+            background-color: rgb(194, 216, 239);
+            border-width: 2px;
+    }
+
+    .amazonlink{
+      color:rgb(0, 113, 133)
+    }
+    .amazonlink:hover{
+       color: brown;
+    }
+    .nike{
+        font-weight: bold;
+        font-size:25px;
+    }
+
+    .stock{
+        color:rgb(0, 118, 0);
+        font-weight: bold;
+        font-size:18px;
+    }
+    .button11{
+        background-color: rgb(255, 216, 20) ;
+        border: none;
+        height: 30px;
+        width: 100px;
+        border-radius: 18px;
+        font-weight:300;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .button11:hover{
+         background-color: rgb(250, 203, 73) ;
+    }
+
+    .button11:active{
+         opacity: 0.5;
+    }
+
+    .button12{
+        background-color: rgb(255, 164, 28) ;
+        border: none;
+        height: 30px;
+        width: 100px;
+        border-radius: 18px;
+        font-weight:300;
+        font-size: 13px;
+        cursor: pointer;
+        margin-left: 8px;
+    }
+
+    .button12:hover{
+         background-color: rgb(250, 203, 73) ;
+    }
+
+    .button12:active{
+         opacity: 0.5;
+    }
+</style>
+
+
+<br>
+<h2>3a.Uber</h2>
+<button class="button4">Request now </button>
+<br>
+<hr>
+
+<h2>3b.Amazon</h2>
+<button class="button5">Add to Cart </button>
+<br>
+<hr>
+
+<h2>3c.GitHub</h2>
+<button class="button6">Sign up </button>
+<br>
+<hr>
+
+<h2>3d.Bootstrap</h2>
+<button class="button7">Get started </button>
+<button class="button8">Download</button>
+<br>
+<hr>
+
+<h2>3e.Linkedin</h2>
+<button class="button9">Apply on company website</button>
+<button class="button10">Save</button>
+<br>
+<hr>
+
+<h2>3f.Challenge Exercise</h2>
+<a href="https://www.amazon.com/" target="_blank" class="amazonlink" >Back to Amazon</a>
+<p class="nike">Nike Black Running Shoes</p>
+<p class="stock">$39 - in stock</p>
+<p>Free delivery tomorrow</p>
+
+<button class="button11">Add to Cart</button>
+<button class="button12">Buy now</button>
+<br>
+<hr>
