@@ -1,0 +1,105 @@
+.image1{
+    width:200px;
+    border-radius: 14px;
+}
+
+.image2{
+    width:200px;
+    height: 200px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.image3{
+    width:200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.search{
+    border-radius: 3px;
+    border-style: solid;
+    border-color: rgb(180, 175, 168);
+    border-width:1px;
+    font-size: 16px;
+}
+
+.google{
+    border-radius: 30px;
+    border: none;
+    border-width:1px;
+    font-size: 16px;
+    width: 500px;
+    height: 40px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0.25, 0.55);
+    padding-left: 2%;
+}
+
+.email{
+    color: rgb(98, 96, 96);
+    margin-bottom: 3px;
+}
+
+.emailplaceholder{
+    color: rgb(98, 96, 96);
+    width: 375px;
+    height: 20px;
+    box-shadow: 0 1px 1px rgba(98, 96, 96);
+    border-radius: 3px;
+    border: solid;
+    border-width: 0.9px;
+    
+}
+
+.agree{
+    color: rgb(98, 96, 96);
+}
+
+.button1{
+    border-radius: 30px;
+    border: none;
+    border-width:1px;
+    font-size: 16px;
+    width: 375px;
+    height: 40px;
+    box-shadow: 0 1px 5px rgba(0, 185, 179, 0.55);
+    padding-left: 2%;
+    color: white;
+    background-color: rgb(0, 136, 199);
+}
+
+.g{
+    vertical-align: middle;
+    border: solid;
+    width:70%;
+    height: 100px;
+    border-color: rgb(98, 96, 96);
+}
+
+.image4{
+    width:100px;
+    height: 100px;
+    border-radius: 100px;
+    vertical-align: middle;
+}
+
+.text{
+     color: rgb(98, 96, 96);
+     padding-left: 2%;
+     vertical-align: middle;
+}
+
+.button2{
+    border: none;
+    text-align: center;
+    border-width:1px;
+    font-size: 14px;
+    width: 70px;
+    height: 30px;
+    box-shadow: 0 1px 5px rgba(0, 185, 179, 0.55);
+    color: white;
+    background-color: rgb(0, 136, 199);
+    border-radius: 20px;
+    vertical-align: middle;
+    margin-left: 43%;
+}
